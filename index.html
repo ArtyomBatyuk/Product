@@ -10,7 +10,7 @@
   <body>
     <header class="header">
       <div class="header__logo logo">
-        <span class="logo__img">
+        <span class="logo__image">
           <svg width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M3.13307 34.4587C1.40988 34.4587 1.6082e-07 33.0488 1.49105e-07 31.3256L7.46349e-08 20.372L7.88626 20.372L7.88626 20.3598L12.6263 20.3598C13.8482 20.3285 14.8821 19.2633 14.8821 18.01C14.8821 16.7255 13.8168 15.6602 12.5323 15.6602L6.26614 15.6602L6.26614 15.6622L4.26148e-08 15.6622L2.13007e-08 12.5272C9.58534e-09 10.804 1.40988 9.3941 3.13307 9.3941L12.5323 9.3941C14.9134 9.3941 16.9499 10.24 18.6104 11.9319C20.3023 13.5924 21.1482 15.6289 21.1482 18.01C21.1482 20.3598 20.3336 22.3963 18.6731 24.0569C17.0126 25.7174 15.0074 26.5947 12.6576 26.626L6.26614 26.626L6.26614 31.3256C6.26614 33.0488 4.85626 34.4587 3.13307 34.4587Z" fill="#02BC6B"/>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0975 5.7578C28.5589 9.11993 30.3031 13.3073 30.3031 18.0672C30.3031 22.7473 28.6319 26.9307 25.2239 30.3034L20.3852 25.7508C22.5047 23.6533 23.545 21.128 23.545 18.0672C23.545 14.9832 22.4734 12.4619 20.3031 10.3538L25.0975 5.7578Z" fill="#02897A"/>
@@ -18,40 +18,82 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 26.6524L6.26614 26.6524L6.26614 31.326C6.26614 33.0492 4.85626 34.4591 3.13307 34.4591C1.40988 34.4591 4.34898e-08 33.0492 3.17744e-08 31.326L0 26.6524Z" fill="#028E37"/>
           </svg>
         </span>
-        <span class="logo__text">Product</span>
+        <h2 class="logo__title">Product</h2>
       </div>
-        <ul class="header__nav categories" >
-          <li class="categories__item">
-            <a href="" class="categories__link _active">Product</a>
-          </li>
-          <li class="categories__item">
-            <a href="" class="categories__link">Customers</a> 
-          </li>
-          <li class="categories__item">
-            <a href="" class="categories__link">Pricing</a>
-          </li>
-          <li class="categories__item">
-            <a href="" class="categories__link">Resources</a>
-          </li>
-        </ul>
-      <div class="header__buttons-wrap">
-          <div class="header__button button">
-            <a href="" class="button__title">Sign In</a>
-          </div>
-          <div class="header__button button">
-            <a href="" class="button__title">Sign Up</a>
-          </div>
-          <div class="header__button switcher">
-            <a href="" class="switcher__icon">
+      <ul class="header__nav categories" >
+        <li class="categories__item">
+          <a href="" class="categories__link _active">Product</a>
+        </li>
+        <li class="categories__item">
+          <a href="" class="categories__link">Customers</a> 
+        </li>
+        <li class="categories__item">
+          <a href="" class="categories__link">Pricing</a>
+        </li>
+        <li class="categories__item">
+          <a href="" class="categories__link">Resources</a>
+        </li>
+      </ul>
+      <div class="header__container">
+        <a href="" class="header__action">Sign In</a>
+        <a href="" class="header__action">Sign Up</a>
+        <div class="header__theme theme">
+          <a href="" class="theme__button">
+            <span class="theme__icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2C6.486 2 2 6.486 2 12C2 17.514 6.486 22 12 22ZM12 4C16.411 4 20 7.589 20 12C20 16.411 16.411 20 12 20C7.589 20 4 16.411 4 12C4 7.589 7.589 4 12 4Z" fill="#02897A"/>
                 <path d="M19 12C19 8.134 15.865 5 12 5V19C15.865 19 19 15.866 19 12Z" fill="#02897A"/>
-              </svg>                
-            </a>
-          </div>
+              </svg>    
+            </span>
+          </a>
+        </div>
       </div>  
     </header>
     <main class="main">
+      
+      <div class="main__card intro">
+        <div class="intro__article article">
+          <h1 class="article__title">Work at the speed of thought</h1>
+          <p class="article__entry">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
+          <div class="article__container">
+            <a href="" class="article__action">Get started</a>
+            <a href="" class="article__action">Watch the Video</a>
+          </div>
+        </div>
+        <div class="intro__image">
+          <picture>
+            <source srcset="">
+            <img src="./assets/images/introduction__image_medium.png" alt="">
+          </picture>
+        </div>
+      </div>
+
+      <div class="main__card advantages">
+        <span class="advantages__title">Product  was Built Specifically for You</span>
+        <ul class="advantages__list">
+          <li class="list__item">
+            <span class="item__icon"></span>
+            <span class="item__title">First click tests</span>
+            <span class="entry">While most people enjoy casino gambling.</span>
+          </li>
+          <li class="list__item">
+            <span class="item__icon"></span>
+            <span class="item__title">Design surveys</span>
+            <span class="entry">Sports betting, lottery and bingo playing for the fun</span>
+          </li>
+          <li class="list__item">
+            <span class="item__icon"></span>
+            <span class="item__title">Preference tests</span>
+            <span class="entry">The Myspace page defines the individual.</span>
+          </li>
+          <li class="list__item">
+            <span class="item__icon"></span>
+            <span class="item__title">Five second tests</span>
+            <span class="entry">Personal choices and the overall personality of the person. </span>
+          </li>
+        </ul>
+        <a href="" class="advantages__button">SIGN UP NOW</a>
+      </div>
 
     </main>
     <footer class="footer">
