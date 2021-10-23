@@ -107,12 +107,13 @@ li {
 }
 
 
-/*MAIN_INTRO*/
+/*INTRO*/
 
 
 .main__intro {
   max-width: 1150px;
   margin: 0 auto;
+  margin-bottom: 114px;
 }
 .intro {
   display: flex;
@@ -121,12 +122,15 @@ li {
 .card {
   display: flex;
   align-items: center;
-  padding-left: 60px;
+  justify-content: space-between;
 }
 .card__article {
   display: flex;
   flex-direction: column;
-  
+}
+.article {
+  padding-left: 60px;
+  max-width: 40%;
 }
 .article__title {
   max-width: 80%;
@@ -179,4 +183,113 @@ li {
 .article__button._white:before {
   content: url(../assets/icons/watch_icon.svg);
   padding: 10px 10px 5px 10px;
+}
+
+
+/*ADVANTAGES*/
+
+
+.main__advanteges {
+  max-width: 1150px;
+  margin: 0 auto;
+  margin-bottom: 169px;
+}
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advantages__title {
+  width: 45%;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.list._flex {
+  display: flex;
+  justify-content: space-between;
+  max-width: 93%;
+  margin-bottom: 60px;
+}
+.list__item._small {
+  max-width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list__title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+}
+.list__text {
+  line-height: 26px;  
+}
+.advantages__button {
+  display: inline-block;
+  font-family: Poppins;
+  font-weight: 600;
+  color: #FFFFFF;
+  border: 1px solid #BCD0E5;
+  border-radius: 4px;
+  background: #02897A;
+  padding: 13px 40px;
+}
+.article__button:hover {
+  background: #FFFFFF;
+  border-radius: 4px;
+  color: #173A56;
+}
+
+
+/*INFO*/
+
+
+.main__info {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+.info__card {
+  margin-bottom: 188px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+}
+.title__sub {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.title__main {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.content__text {
+  line-height: 26px;
+}
+.content__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+.content__subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 12px;
+}
+.list__item._row {
+  width: 93%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.list__icon {
+  margin-right: 30px;
 }
