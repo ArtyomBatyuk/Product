@@ -238,7 +238,7 @@ li {
   background: #02897A;
   padding: 13px 40px;
 }
-.article__button:hover {
+.advantages__button:hover {
   background: #FFFFFF;
   border-radius: 4px;
   color: #173A56;
@@ -341,9 +341,7 @@ li {
   min-width: 40%;
   justify-content: space-around;
 }
-.list__holder {
-  /* padding: 16px; */
-}
+
 .list__text._cloud {
 
   font-weight: 500;
@@ -370,6 +368,7 @@ li {
 .strategy{
   display: flex;
   flex-direction: column;
+  margin-bottom: 45px;
 }
 .strategy__tittle {
   font-style: normal;
@@ -383,7 +382,32 @@ li {
   line-height: 26px;
   margin-bottom: 33px;
 }
-
+.strategy__slides{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;  
+}
+.slide {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #DEDEDE;
+  border-radius: 8px;
+}
+.slides__text {
+  padding: 5px 20px;
+}
+.slides_author {
+  font-weight: 700;
+}
+.slides__title {
+  max-width: 80%;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 40px;
+}
+.slides__handler{
+  text-align: center;
+}
 
 /*PRICE*/
 
@@ -436,19 +460,25 @@ li {
   margin: 45px 0;
 }
 .contacts__name, .contacts__email {
+  min-width: 70%;
   background: #F5F5F5;
   border: 1px solid #E8E8E8;
   border-radius: 39px;
   margin-bottom: 45px;
-  min-width: 70%;
   padding: 15px 20px;
+  outline: none;
 }
 .contacts__message {
+  min-width: 70%;
   background: #F5F5F5;
   border: 1px solid #E8E8E8;
-  min-width: 70%;
+  resize: none;
+  outline: none;
   margin-bottom: 45px;
   padding: 15px 20px;
+}
+.contacts__link {
+ display: inline-block;
 }
 .contacts__button {
   background: #02897A;
@@ -458,6 +488,7 @@ li {
   line-height: 16px;
   letter-spacing: 0.2px;
   color: #FFFFFF;
+  padding: 13px 40px; 
 }
 
 /*FOOTER*/
@@ -505,9 +536,14 @@ li {
   border: 1px solid #BCD0E5;
   box-sizing: border-box;
   border-radius: 4px;
+  outline: none;
+  padding: 7px;
+}
+.form__link {
+  display: inline-block;
 }
 .form__button {
-  display: inline-block;
+
   font-family: Poppins;
   font-weight: 600;
   color: #FFFFFF;
