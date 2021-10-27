@@ -24,7 +24,9 @@ li {
   margin-block-start: 0;
   margin-block-end: 0;
  }
-
+ h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+ }
 
  /*HEADER*/
 
@@ -49,11 +51,14 @@ li {
   margin-right: 17px;
 }
 .logo__title {
+  font-size: 30px;
+  color: #173A56;
+  margin: 0;
+}
+.title {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
-  color: #173A56;
 }
 .header__nav {
   margin-left: auto;
@@ -115,6 +120,7 @@ li {
 .intro {
   display: flex;
   align-items: center;
+  margin-bottom: 45px;
 }
 .card {
   display: flex;
@@ -131,7 +137,6 @@ li {
 }
 .article__title {
   max-width: 80%;
-  font-weight: bold;
   font-size: 40px;
   margin-bottom: 20px;
   cursor: default;
@@ -188,7 +193,6 @@ li {
 }
 .advantages__title {
   width: 45%;
-  font-weight: bold;
   font-size: 32px;
   line-height: 48px;
   text-align: center;
@@ -211,6 +215,7 @@ li {
   font-size: 22px;
   line-height: 33px;
   cursor: default;
+  margin: 0;
 }
 .list__text {
   line-height: 26px;  
@@ -236,13 +241,13 @@ li {
   display: flex;
   flex-direction: column;
 }
-.title__sub {
+.title._sub {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   cursor: default;
 }
-.title__main {
+.title._main {
   font-weight: bold;
   font-size: 32px;
   line-height: 48px;
