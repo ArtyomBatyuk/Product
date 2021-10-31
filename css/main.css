@@ -245,10 +245,7 @@ li {
 .info__card {
   margin-bottom: 188px;
 }
-.title {
-  display: flex;
-  flex-direction: column;
-}
+
 .title._sub {
   font-weight: 600;
   font-size: 16px;
