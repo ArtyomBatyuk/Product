@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
 
-    <header class="header">
-      <div class="container _flex">
+    <div class="container">
+      <header class="header">
         <div class="header__logo logo">
           <a href="" class="logo__link">
             <span class="logo__icon">
@@ -51,8 +53,18 @@
             </a>
           </div>
         </div>  
-      </div>  
-    </header>
+        <div class="header__burger nav">
+          <input class="nav__check" type="checkbox" id="showmenu"/>
+          <label class="nav__showmenu" for="showmenu">&#9776;</label>
+          <ul class="nav__menu menu">
+            <li><a class="menu__item" href="#">Product</a></li>
+            <li><a class="menu__item" href="#">Customers</a></li>
+            <li><a class="menu__item" href="#">Pricing</a></li>
+            <li><a class="menu__item" href="#">Resources</a></li>
+          </ul>
+        </div>
+      </header>
+    </div>  
 
     <main class="main">
       <div class="container">
@@ -67,17 +79,21 @@
               </div>
             </div>
             <picture class="card__holder">
-              <source srcset="">
-              <img class="card__image" src="./assets/images/introduction__image_medium.png" alt="">
+              <source srcset="./assets/images/introduction__image_xs.png" media="(max-width: 450px)">
+              <source srcset="./assets/images/introduction__image_s.png" media="(max-width: 786px)">
+              <source srcset="./assets/images/introduction__image_m.png" media="(max-width: 1024px)">
+              <img class="card__image" src="./assets/images/introduction__image_l.png" alt="">
             </picture>
           </div>
         </section>
+      </div>
 
+      <div class="container _background">
         <section class="main__advanteges advantages">
           <h2 class="advantages__title title">Product  was Built Specifically for You</h2>
           <ul class="advantages__list list _flex">
             <li class="list__item _small">
-              <span class="list__icon">
+              <span class="list__icon _no-margin">
                 <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_1:541)" filter="url(#filter0_d_1:541)">
                   <rect x="4" y="0.830078" width="50" height="50" rx="19" fill="#02897A"/>
@@ -103,7 +119,7 @@
               <p class="list__text">While most people enjoy casino gambling.</p>
             </li>
             <li class="list__item _small">
-              <span class="list__icon">
+              <span class="list__icon _no-margin">
                 <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1:549)" filter="url(#filter0_d_1:549)">
                 <rect x="4" y="0.830078" width="50" height="50" rx="19" fill="#4D8DFF"/>
@@ -129,7 +145,7 @@
               <p class="list__text">Sports betting, lottery and bingo playing for the fun</p>
             </li>
             <li class="list__item _small">
-              <span class="list__icon">
+              <span class="list__icon _no-margin">
                 <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_1:557)" filter="url(#filter0_d_1:557)">
                   <rect x="4" y="0.830078" width="50" height="50" rx="19" fill="#740A76"/>
@@ -155,7 +171,7 @@
               <p class="list__text">The Myspace page defines the individual.</p>
             </li>
             <li class="list__item _small">
-              <span class="list__icon">
+              <span class="list__icon _no-margin">
                 <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_1:565)" filter="url(#filter0_d_1:565)">
                   <rect x="4" y="0.830078" width="50" height="50" rx="19" fill="#F03E3D"/>
@@ -183,7 +199,9 @@
           </ul>
           <a href="" class="advantages__link button">SIGN UP NOW</a>
         </section>
+      </div>
 
+      <div class="container">
         <section class="main__info info">
           <div class="info__card card">
             <div class="card__article article">
@@ -200,13 +218,19 @@
               </div>
             </div>
             <picture class="card__holder">
-              <img src="./assets/images/management_img_medium.png" alt="" class="card__image">
+              <source srcset="./assets/images/management_image_xs.png" media="(max-width: 450px)">
+              <source srcset="./assets/images/management_image_s.png" media="(max-width: 786px)">
+              <source srcset="../assets/images/management_image_m.png" media="(max-width: 1024px)">
+              <img src="./assets/images/management_image_l.png" alt="" class="card__image">
             </picture>
           </div>
 
-          <div class="info__card card">
+          <div class="info__card card _reverse">
             <picture class="card__holder">
-              <img src="./assets/images/customer_image_medium.png" alt="" class="card__image">
+              <source srcset="./assets/images/customer_image_xs.png" media="(max-width: 450px)">
+              <source srcset="./assets/images/customer_image_s.png" media="(max-width: 786px)">
+              <source srcset="./assets/images/customer_image_m.png" media="(max-width: 1024px)">
+              <img src="./assets/images/customer_image_l.png" alt="" class="card__image">
             </picture>
             <div class="card__article article">
               <div class="article__title title">
@@ -269,35 +293,40 @@
               </div>
             </div>
             <picture class="card__holder">
-              <img src="./assets/images/colaborative_image_medium.png" alt="" class="card__image">
+              <source srcset="./assets/images/colaborative_image_xs.png" media="(max-width: 450px)">
+              <source srcset="./assets/images/colaborative_image_s.png" media="(max-width: 786px)">
+              <source srcset="./assets/images/colaborative_image_m.png" media="(max-width: 1024px)">
+              <img src="./assets/images/colaborative_image_l.png" alt="" class="card__image">
             </picture>
           </div>
         </section>
+      </div>
 
+      <div class="container _background _rev">
         <section class="main__presentation presetation">
           <div class="presentation__offer offer">
             <h2 class="ofer__title title">Quick & Easy Process</h2>
             <p class="ofer__text"> Do you require some help for your project: Conception workshop, prototyping, marketing strategy, landing page, Ux/UI?</p>
             <ul class="ofer__list list _flexwrap">
-              <li class="list__item _couple">
+              <li class="list__item _couple _first">
                 <picture class="list__holder">
                   <img src="./assets/avatars/avatar_first.jpg" alt="" class="list__image">
                 </picture>
                 <p class="list__text _cloud">I can take care of your pitch</p>
               </li>
-              <li class="list__item _couple">
+              <li class="list__item _couple _fourth">
                 <p class="list__text _cloud">I can prototype your app</p>
                 <picture class="list__holder">
                   <img src="./assets/avatars/avatar-second.jpg" alt="" class="list__image">
                 </picture>
               </li>
-              <li class="list__item _couple">
+              <li class="list__item _couple _second">
                 <p class="list__text _cloud">I can design you website</p>
                 <picture class="list__holder">
                   <img src="./assets/avatars/avatar_third.jpg" alt="" class="list__image">
                 </picture>
               </li>
-              <li class="list__item _couple">
+              <li class="list__item _couple _third">
                 <picture class="list__holder">
                   <img src="./assets/avatars/avatar_fourth.jpg" alt="" class="list__image">
                 </picture>
@@ -344,7 +373,9 @@
             </a>
           </div>
         </section>
+      </div>
 
+      <div class="container">
         <section class="main__price price">
           <p class="price__title title">Price Table</p>
           <p class="price__text">We offer competitive price</p>
@@ -396,7 +427,9 @@
             </div>
           </div>
         </section>
+      </div>
 
+      <div class="container">
         <section class="main__contacts contacts">
           <h4 class="contacts__title title">Send a message</h4>
           <input type="text" class="contacts__input" placeholder="Your Name">
