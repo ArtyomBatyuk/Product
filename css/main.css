@@ -121,8 +121,12 @@ li {
 .header__burger {
   display: none;
 }
-input {display: none;}
-label {cursor: pointer;}
+.header__burger input {
+  display: none;
+}
+.header__burger label {
+  cursor: pointer;
+}
 
 .nav__showmenu {
     display: inline-block;
@@ -611,7 +615,7 @@ label {cursor: pointer;}
   cursor: default;
 }
 .contacts__input {
-  min-width: 70%;
+  width: 70%;
   background: #F5F5F5;
   border: 1px solid #E8E8E8;
   border-radius: 39px;
@@ -620,7 +624,7 @@ label {cursor: pointer;}
   outline: none;
 }
 .contacts__message {
-  min-width: 70%;
+  width: 70%;
   background: #F5F5F5;
   border: 1px solid #E8E8E8;
   resize: none;
@@ -658,13 +662,13 @@ label {cursor: pointer;}
 .social__link {
   display: inline-block;
 }
-.menu__title {  
+.navbar__title {  
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
   cursor: default;
 }
-.menu__text {
+.navbar__text {
   line-height: 35px;
 }
 
